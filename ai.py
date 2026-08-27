@@ -1,4 +1,3 @@
-# ai.py - O coração com A* (COMPLETO)
 import heapq
 
 def a_star(start, goal, maze):
@@ -36,7 +35,6 @@ def reconstruct_path(came_from, current):
 def get_neighbors(pos, maze):
     x, y = pos
     neighbors = []
-    # Cima, Baixo, Esquerda, Direita
     for dx, dy in [(-1,0), (1,0), (0,-1), (0,1)]:
         nx, ny = x + dx, y + dy
         if maze.is_walkable(nx, ny):
