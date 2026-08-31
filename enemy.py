@@ -1,4 +1,3 @@
-# enemy.py
 import random
 from ai import a_star
 
